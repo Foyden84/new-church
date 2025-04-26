@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Services - Grace Community Church</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://cdn.jsdelivr.net/npm/@fontsource/roboto@3.3.1/400.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@fontsource/roboto@3.3.1/700.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f8fafc;
+      color: #1e293b;
+    }
+    .nav-active {
+      border-bottom: 3px solid #2563eb;
+    }
+    .bg-hero {
+      background: linear-gradient(rgba(30,41,59,0.6), rgba(30,41,59,0.7)), url('https://images.unsplash.com/photo-1630449151135-6db9690cbda4?auto=format&fit=crop&w=1200&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+    .pdf-no-scroll::-webkit-scrollbar { display: none; }
+    .pdf-no-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+</head>
+<body>
+  <!-- Header and Navigation Bar -->
+  <header class="w-full bg-hero text-white">
+    <div class="container mx-auto flex flex-col items-center px-4 py-6 lg:flex-row lg:justify-between">
+      <div class="text-2xl font-bold tracking-wide mb-4 lg:mb-0">
+        <i class="fas fa-church text-blue-300 mr-2"></i>Grace Community Church
+      </div>
+      <nav class="flex space-x-4 text-lg">
+        <a href="index.html" class="px-2 pb-1 transition-colors hover:text-blue-200">Home</a>
+        <a href="about.html" class="px-2 pb-1 transition-colors hover:text-blue-200">About</a>
+        <a href="services.html" class="px-2 pb-1 transition-colors hover:text-blue-200 nav-active">Services</a>
+        <a href="sermons.html" class="px-2 pb-1 transition-colors hover:text-blue-200">Sermons</a>
+        <a href="events.html" class="px-2 pb-1 transition-colors hover:text-blue-200">Events</a>
+        <a href="connect.html" class="px-2 pb-1 transition-colors hover:text-blue-200">Connect</a>
+        <a href="give.html" class="px-2 pb-1 transition-colors hover:text-blue-200">Give</a>
+      </nav>
+    </div>
+    <div class="container mx-auto flex flex-col items-center text-center py-20">
+      <h1 class="text-4xl font-bold mb-3">Our Services</h1>
+      <p class="mb-6 text-lg">Join us as we gather, worship, and grow together in faith.</p>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="container mx-auto px-2 md:px-8">
+    <!-- SERVICES -->
+    <section class="py-10">
+      <div class="text-center mb-8">
+        <h2 class="text-2xl font-bold text-blue-700 mb-2">Weekly Services</h2>
+        <p class="text-gray-800">We offer various opportunities to worship, learn, and connect.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-6 flex flex-col items-center">
+          <i class="fas fa-church text-3xl text-blue-600 mb-3"></i>
+          <h3 class="font-bold text-lg mb-2">Sunday Worship</h3>
+          <span class="text-blue-600 font-semibold">8:00 AM & 10:00 AM</span>
+          <p class="mt-3 text-center">Experience passionate worship, encouraging messages, and a welcoming environment for all generations.</p>
+        </div>
+        <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-6 flex flex-col items-center">
+          <i class="fas fa-child text-3xl text-blue-600 mb-3"></i>
+          <h3 class="font-bold text-lg mb-2">Kids & Youth</h3>
+          <span class="text-blue-600 font-semibold">Sundays & Wednesdays</span>
+          <p class="mt-3 text-center">Dynamic programs for children and youth to grow in faith, friendship, and fun.</p>
+        </div>
+        <div class="bg-white rounded-lg shadow hover:shadow-lg transition p-6 flex flex-col items-center">
+          <i class="fas fa-users text-3xl text-blue-600 mb-3"></i>
+          <h3 class="font-bold text-lg mb-2">Midweek Small Groups</h3>
+          <span class="text-blue-600 font-semibold">Various Times</span>
+          <p class="mt-3 text-center">Connect, study God's word, and build lasting relationships in a small group throughout the week.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sunday Service Details -->
+    <section class="py-10">
+      <div class="bg-white rounded-lg shadow p-6 mb-8">
+        <h2 class="text-2xl font-bold text-blue-700 mb-4">What to Expect on Sundays</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <h3 class="font-bold text-lg mb-2">8:00 AM Traditional Service</h3>
+            <ul class="list-disc list-inside space-y-2 text-gray-700 mb-4">
+              <li>Classic hymns and traditional worship</li>
+              <li>Choir-led music</li>
+              <li>Scripture-focused teaching</li>
+              <li>Communion on the first Sunday of each month</li>
+              <li>Approximately 75 minutes in length</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg mb-2">10:00 AM Contemporary Service</h3>
+            <ul class="list-disc list-inside space-y-2 text-gray-700 mb-4">
+              <li>Modern worship band and contemporary music</li>
+              <li>Multimedia presentations</li>
+              <li>Practical, relevant teaching</li>
+              <li>Communion on the first Sunday of each month</li>
+              <li>Approximately 75 minutes in length</li>
+            </ul>
+          </div>
+        </div>
+        <div class="mt-4 p-4 bg-blue-50 rounded">
+          <h3 class="font-bold text-lg mb-2">For Both Services:</h3>
+          <ul class="list-disc list-inside space-y-2 text-gray-700">
+            <li>Children's ministry available for infants through 5th grade</li>
+            <li>Coffee and refreshments in the lobby</li>
+            <li>Friendly greeters to help you find your way</li>
+            <li>No dress code - come as you are!</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Children & Youth Section -->
+    <section class="py-10">
+      <div class="text-center mb-8">
+        <h2 class="text-2xl font-bold text-blue-700 mb-2">Children & Youth Ministries</h2>
+        <p class="text-gray-800">Nurturing the faith of the next generation.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-white rounded-lg shadow p-6">
+          <div class="flex items-center mb-3">
+            <i class="fas fa-baby text-2xl text-blue-600 mr-3"></i>
+            <h3 class="font-bold text-lg">Grace Kids (Ages 0-11)</h3>
+          </div>
+          <p class="mb-3 text-gray-700">Our children's ministry provides age-appropriate Bible teaching, worship, crafts, and activities in a safe, fun environment. Available during both Sunday services.</p>
+          <ul class="list-disc list-inside text-gray-700 mb-3">
+            <li>Nursery (0-2 years)</li>
+            <li>Preschool (3-5 years)</li>
+            <li>Elementary (K-5th grade)</li>
+          </ul>
+          <p class="text-sm text-gray-600">All children's workers are background-checked and trained in child safety procedures.</p>
+        </div>
+        <div class="bg-white rounded-lg shadow p-6">
+          <div class="flex items-center mb-3">
+            <i class="fas fa-users text-2xl text-blue-600 mr-3"></i>
+            <h3 class="font-bold text-lg">Youth Ministry (Ages 12-18)</h3>
+          </div>
+          <p class="mb-3 text-gray-700">Our youth ministry helps teens grow in their faith through relevant teaching, worship, small groups, and fun activities.</p>
+          <ul class="list-disc list-inside text-gray-700 mb-3">
+            <li>Middle School (6th-8th grade): Sundays at 10:00 AM</li>
+            <li>High School (9th-12th grade): Sundays at 10:00 AM</li>
+            <li>Youth Group: Wednesdays 6:30-8:00 PM</li>
+          </ul>
+          <p class="text-sm text-gray-600">Special events, retreats, and service projects throughout the year.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Small Groups Section -->
+    <section class="py-10">
+      <div class="text-center mb-8">
+        <h2 class="text-2xl font-bold text-blue-700 mb-2">Small Group Ministry</h2>
+        <p class="text-gray-800">Connect with others in a more intimate setting for growth and fellowship.</p>
+      </div>
+      <div class="bg-white rounded-lg shadow p-6">
+        <p class="mb-4 text-gray-700">Small groups are the heart of our church community. Meeting in homes throughout the week, these groups provide a place to build relationships, study Scripture, pray together, and support one another.</p>
+        <h3 class="font-bold text-lg mb-3">Types of Small Groups:</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+          <div class="p-4 bg-blue-50 rounded">
+            <h4 class="font-semibold mb-1">Life Stage Groups</h4>
+            <p class="text-gray-700">Groups for singles, young married couples, parents, empty nesters, and seniors.</p>
+          </div>
+          <div class="p-4 bg-blue-50 rounded">
+            <h4 class="font-semibold mb-1">Interest-Based Groups</h4>
+            <p class="text-gray-700">Groups focused on specific topics like parenting, finances, or specific Bible studies.</p>
+          </div>
+          <div class="p-4 bg-blue-50 rounded">
+            <h4 class="font-semibold mb-1">Neighborhood Groups</h4>
+            <p class="text-gray-700">Groups organized by geographic location to foster community in your area.</p>
+          </div>
+        </div>
+        <div class="text-center">
+          <a href="connect.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded transition-colors">Find a Small Group</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="w-full bg-blue-900 text-white mt-8">
+    <div class="container mx-auto px-2 md:px-8 py-10 flex flex-col md:flex-row md:justify-between">
+      <div class="mb-6 md:mb-0">
+        <span class="text-xl font-bold tracking-wide">Grace Community Church</span>
+        <p class="text-blue-200 mt-2 text-sm">123 Blessings Avenue, City Center, State</p>
+        <p class="text-blue-200 text-sm">© 2024 Grace Community Church. All rights reserved.</p>
+      </div>
+      <div class="flex space-x-8">
+        <div>
+          <p class="font-semibold text-blue-200 mb-1">Quick Links</p>
+          <ul class="space-y-1">
+            <li><a href="index.html" class="hover:text-blue-500">Home</a></li>
+            <li><a href="about.html" class="hover:text-blue-500">About</a></li>
+            <li><a href="services.html" class="hover:text-blue-500">Services</a></li>
+            <li><a href="sermons.html" class="hover:text-blue-500">Sermons</a></li>
+            <li><a href="events.html" class="hover:text-blue-500">Events</a></li>
+            <li><a href="connect.html" class="hover:text-blue-500">Connect</a></li>
+            <li><a href="give.html" class="hover:text-blue-500">Give</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-semibold text-blue-200 mb-1">Contact</p>
+          <ul class="space-y-1 text-sm">
+            <li><i class="fas fa-envelope mr-2"></i>connect@gracechurch.org</li>
+            <li><i class="fas fa-phone mr-2"></i>(555) 123-4567</li>
+            <li><i class="fas fa-map-marker-alt mr-2"></i>123 Blessings Ave</li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex items-center space-x-3 mt-6 md:mt-0">
+        <a href="#" class="bg-blue-800 rounded-full p-2 hover:bg-white hover:text-blue-800 transition"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="bg-blue-800 rounded-full p-2 hover:bg-white hover:text-blue-800 transition"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="bg-blue-800 rounded-full p-2 hover:bg-white hover:text-blue-800 transition"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
