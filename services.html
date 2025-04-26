@@ -16,6 +16,7 @@
       font-family: 'Roboto', sans-serif;
       background-color: #f8fafc;
       color: #1e293b;
+      padding-top: 0; /* Will be adjusted by JavaScript */
     }
     .nav-active {
       border-bottom: 3px solid #2563eb;
@@ -25,18 +26,31 @@
       background-size: cover;
       background-position: center;
     }
+    .sticky-nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background-color: rgba(30, 41, 59, 0.85);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    .sticky-nav.scrolled {
+      background-color: rgba(30, 41, 59, 0.95);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
     .pdf-no-scroll::-webkit-scrollbar { display: none; }
     .pdf-no-scroll { -ms-overflow-style: none; scrollbar-width: none; }
   </style>
 </head>
 <body>
-  <!-- Header and Navigation Bar -->
-  <header class="w-full bg-hero text-white">
-    <div class="container mx-auto flex flex-col items-center px-4 py-6 lg:flex-row lg:justify-between">
+  <!-- Navigation Bar (Sticky) -->
+  <nav id="sticky-nav" class="sticky-nav w-full text-white">
+    <div class="container mx-auto flex flex-col items-center px-4 py-4 lg:flex-row lg:justify-between">
       <div class="text-2xl font-bold tracking-wide mb-4 lg:mb-0">
         <i class="fas fa-church text-blue-300 mr-2"></i>Grace Community Church
       </div>
-      <nav class="flex space-x-4 text-lg">
+      <div class="flex space-x-4 text-lg">
         <a href="index.html" class="px-2 pb-1 transition-colors hover:text-blue-200">Home</a>
         <a href="about.html" class="px-2 pb-1 transition-colors hover:text-blue-200">About</a>
         <a href="services.html" class="px-2 pb-1 transition-colors hover:text-blue-200 nav-active">Services</a>
@@ -44,9 +58,13 @@
         <a href="events.html" class="px-2 pb-1 transition-colors hover:text-blue-200">Events</a>
         <a href="connect.html" class="px-2 pb-1 transition-colors hover:text-blue-200">Connect</a>
         <a href="give.html" class="px-2 pb-1 transition-colors hover:text-blue-200">Give</a>
-      </nav>
+      </div>
     </div>
-    <div class="container mx-auto flex flex-col items-center text-center py-20">
+  </nav>
+
+  <!-- Header with Hero Section -->
+  <header class="w-full bg-hero text-white">
+    <div class="container mx-auto flex flex-col items-center text-center py-28">
       <h1 class="text-4xl font-bold mb-3">Our Services</h1>
       <p class="mb-6 text-lg">Join us as we gather, worship, and grow together in faith.</p>
     </div>
@@ -223,5 +241,37 @@
       </div>
     </div>
   </footer>
+
+  <!-- JavaScript for Sticky Navigation -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const nav = document.getElementById('sticky-nav');
+      const navHeight = nav.offsetHeight;
+
+      // Set initial body padding to accommodate fixed navbar
+      document.body.style.paddingTop = navHeight + 'px';
+
+      // Function to handle scroll event
+      function handleScroll() {
+        if (window.scrollY > 50) {
+          nav.classList.add('scrolled');
+        } else {
+          nav.classList.remove('scrolled');
+        }
+      }
+
+      // Add scroll event listener
+      window.addEventListener('scroll', handleScroll);
+
+      // Handle resize events to update padding
+      window.addEventListener('resize', function() {
+        const updatedNavHeight = nav.offsetHeight;
+        document.body.style.paddingTop = updatedNavHeight + 'px';
+      });
+
+      // Initial call to set correct state
+      handleScroll();
+    });
+  </script>
 </body>
 </html>
